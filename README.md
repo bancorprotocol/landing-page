@@ -55,13 +55,13 @@ This will also execute the `install` and `build` scripts before deploying.
 
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 
-- 🎨 [Windi CSS](https://github.com/windicss/windicss) - (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bunch of additional features!
+- 🎨 [TailwindCSS](https://tailwindcss.com/)
 
 - 🌍 [I18n ready](./locales)
 
 - 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
 
-- 🦾 TypeScript, of course
+- 🦾 TypeScript
 
 <br>
 
@@ -93,7 +93,6 @@ This will also execute the `install` and `build` scripts before deploying.
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
-  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
   - ESLint
   - Prettier
 
