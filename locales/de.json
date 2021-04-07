@@ -1,0 +1,15 @@
+{
+  "button": {
+    "about": "Info",
+    "back": "Zurück",
+    "go": "GO",
+    "toggle_langs": "Sprache wechseln"
+  },
+  "intro": {
+    "desc": "Opinionated Vite Starter Template",
+    "dynamic-route": "Demo einer dynamischen route",
+    "hi": "Hallo, {name}!",
+    "whats-your-name": "Wie heißt du?"
+  },
+  "not-found": "Nicht gefunden"
+}

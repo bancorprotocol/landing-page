@@ -1,0 +1,44 @@
+{
+  "name": "bancor-landing-page",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3333 --open",
+    "build": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build",
+    "deploy": "pnpm i && pnpm build && firebase deploy --only hosting:bancor-landing"
+  },
+  "dependencies": {
+    "@vueuse/core": "^4.4.1",
+    "@vueuse/head": "^0.5.1",
+    "numbro": "^2.3.2",
+    "vue": "^3.0.7",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.6.2",
+    "@intlify/vite-plugin-vue-i18n": "^2.0.3",
+    "@tailwindcss/jit": "^0.1.18",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.7",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.22.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "lodash": "^4.17.21",
+    "pnpm": "^5.18.7",
+    "postcss": "^8.2.9",
+    "postcss-import": "^14.0.0",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.4",
+    "typescript": "^4.2.3",
+    "vite": "^2.1.0",
+    "vite-plugin-components": "^0.8.3",
+    "vite-plugin-pages": "^0.7.1",
+    "vite-plugin-pwa": "^0.5.6",
+    "vite-plugin-vue-layouts": "^0.2.2",
+    "vue-tsc": "^0.0.14"
+  }
+}

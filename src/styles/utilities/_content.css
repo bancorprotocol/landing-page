@@ -1,0 +1,15 @@
+@layer utilities {
+  .main-content {
+    @apply 2xl:container 2xl:mx-auto px-6 md:px-10;
+  }
+
+  .bg-cubes {
+    background-image: url('/images/backgrounds/bg-cubes2.svg');
+    @apply bg-no-repeat bg-top;
+  }
+
+  .bg-mobile-cubes {
+    background-image: url('/images/backgrounds/bg-mobile-cubes3.svg');
+    @apply bg-no-repeat bg-top;
+  }
+}
