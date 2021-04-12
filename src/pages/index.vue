@@ -1,20 +1,15 @@
 <template>
   <div class="main-content">
     <div class="flex flex-col md:items-center">
-      <h1 class="mb-8 text-[50px] md:hidden">
-        Swap<br />
-        Stake<br />
-        Earn
-      </h1>
-      <h1 class="mb-8 hidden md:block md:text-[75px]">Swap, Stake & Earn</h1>
-      <p class="max-w-3xl text-lg md:text-center">
-        Bancor allows you to swap your crypto or earn more by putting your funds to work in an automated market maker.
+      <h1 class="mb-8 text-[60px] md:text-[70px]">Trade & Earn</h1>
+      <p class="max-w-3xl text-[24px] md:text-center">
+        Trade tokens and earn interest on your favorite tokens by staking them in Bancor’s decentralized exchange
       </p>
 
       <div class="flex justify-center mt-8 space-x-3 md:hidden">
         <a v-for="item in widgetData" :key="item.id" class="flex btn-primary" :href="item.buttonHref">
           {{ item.title }}
-          <img :src="`/images/icons/${item.icon}-white.svg`" class="ml-3" />
+          <img :src="`/images/icons/${item.icon}-white.svg`" alt="Swap and Earn CTA Icon" class="ml-3" />
         </a>
       </div>
     </div>
@@ -40,7 +35,7 @@
     <div v-for="(item, index) in widgetData" :key="item.id">
       <div class="flex flex-row">
         <div class="w-[80px] flex-none flex items-center justify-center mr-5">
-          <img :src="`/images/icons/${item.icon}.svg`" />
+          <img :src="`/images/icons/${item.icon}.svg`" alt="Swap and Earn CTA Icon" />
         </div>
         <div class="flex-grow">
           <h2 class="mb-2">{{ item.title }}</h2>
@@ -83,8 +78,8 @@
 const widgetData = [
   {
     id: 1,
-    title: 'Swap',
-    description: 'Simply swap, low fees, low slippage, fully non-custodial.',
+    title: 'Trade',
+    description: 'Fast, secure trading at the best prices, no sign-ups or registrations',
     icon: 'swap',
     buttonLabel: 'Get started',
     buttonHref: 'https://app.bancor.network/eth/swap',
@@ -92,7 +87,7 @@ const widgetData = [
   {
     id: 2,
     title: 'Earn',
-    description: 'Stake tokens, mitigate impermanent loss risk, earn fees.',
+    description: 'Stake tokens to earn fees and rewards with impermanent loss protection',
     icon: 'earn',
     buttonLabel: 'Get started',
     buttonHref: 'https://app.bancor.network/eth/data',
@@ -104,7 +99,7 @@ const aboutData = [
     id: 1,
     title: 'About Bancor',
     description:
-      'Bancor Protocol is a powerful open source framework inspiring the next generation of token projects. The Protocol enables automatic price discovery and swaps between tokens in a network through the use of multiple smart contracts.',
+      'Bancor is the first decentralized trading protocol, empowering traders, liquidity providers & developers to participate in an open financial marketplace with no barriers to entry. No one needs permission to use the open-source Bancor Protocol.',
     links: [
       {
         id: 1,
@@ -130,9 +125,9 @@ const aboutData = [
   },
   {
     id: 2,
-    title: 'Bancor Dao',
+    title: 'Bancor DAO',
     description:
-      'Bancor future of development is controlled by a decentralized autonomous organization (DAO) that can propose and vote on key features and implementations. Every person can take part in the DAO decision making process and it is open and transparent to all.',
+      'Bancor is owned and operated by its community as a decentralized autonomous organization (DAO). The Bancor Protocol is governed via a democratic and transparent voting system which allows all stakeholders to get involved and shape Bancor’s future.',
     links: [
       {
         id: 1,
