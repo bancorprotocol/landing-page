@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Bancor Network - Swap, Stake & Earn',
+  title: 'Bancor Network - Trade & Earn',
   meta: [
     {
       name: 'description',
