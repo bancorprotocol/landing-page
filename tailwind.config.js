@@ -124,7 +124,7 @@ module.exports = {
       custom: '4px 8px 9.31px -1px rgba(10, 57, 133, 0.25)',
       custom2: '2px 4px 4px rgba(52, 113, 210, 0.24)',
       custom3: '3px 5px 4px rgba(52, 113, 210, 0.48)',
-      custom4: '4px 8px 9.31px -1px rgba(10, 57, 133, 0.54)',
+      custom4: '0px 0px 10px 4px rgba(1, 72, 185, 0.4)',
       none: 'none',
     },
     fontFamily: {
