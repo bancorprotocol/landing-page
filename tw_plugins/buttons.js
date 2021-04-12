@@ -49,12 +49,12 @@ module.exports = function (options = {}, extend = true) {
         borderColor: theme(`colors.${key}.500`),
         [`@apply focus:ring-${key}-500 focus:ring-opacity-50`]: '',
         '&:hover': {
-          backgroundColor: theme(`colors.${key}.600`),
-          borderColor: theme(`colors.${key}.600`),
+          backgroundColor: theme(`colors.${key}.800`),
+          borderColor: theme(`colors.${key}.800`),
         },
         '&:active': {
-          backgroundColor: theme(`colors.${key}.700`),
-          borderColor: theme(`colors.${key}.700`),
+          backgroundColor: theme(`colors.${key}.400`),
+          borderColor: theme(`colors.${key}.400`),
         },
         '&:disabled': {
           backgroundColor: theme(`colors.${key}.500`),
