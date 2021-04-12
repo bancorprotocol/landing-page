@@ -27,28 +27,18 @@ const footerData = [
     links: [
       {
         id: 1,
-        label: 'Bancor Swap',
+        label: 'Bancor Trading',
         href: 'https://app.bancor.network/eth/swap',
       },
       {
         id: 2,
-        label: 'Bancor Wallet',
-        href: 'https://wallet.bancor.network/',
-      },
-      {
-        id: 3,
-        label: 'Bancor X',
-        href: 'https://x.bancor.network/',
-      },
-      {
-        id: 4,
-        label: 'Bancor Data',
+        label: 'Bancor Pools',
         href: 'https://app.bancor.network/eth/data',
       },
       {
-        id: 5,
-        label: 'Liquidity Protection',
-        href: 'https://app.bancor.network/eth/protection',
+        id: 3,
+        label: 'Bancor Data',
+        href: 'https://duneanalytics.com/Bancor/bancor_1',
       },
       {
         id: 6,
