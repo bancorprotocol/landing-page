@@ -12,12 +12,12 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
       - name: Install Dependencies
         run: |
           npm install
       - name: Build
-        run: npm build
+        run: npm run build
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
