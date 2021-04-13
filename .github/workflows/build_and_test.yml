@@ -1,0 +1,20 @@
+name: Build and Test
+
+on:
+  pull_request:
+    types:
+      [opened, closed, edited, ready_for_review, review_requested, reopened]
+  push:
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          pnpm install
+      - name: Build
+        run: pnpm build
