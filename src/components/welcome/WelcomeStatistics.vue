@@ -70,7 +70,7 @@ const statistics = computed(() => {
     },
     {
       id: 3,
-      label: 'Price BNT',
+      label: 'BNT Price',
       prepend: '$',
       value: numbro(welcomeData.value.bnt_price.usd).format({ mantissa: 2 }),
       append: '',
