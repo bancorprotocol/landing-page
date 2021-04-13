@@ -1,0 +1,26 @@
+name: Deploy Production to Firebase
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Install Dependencies
+        run: |
+          pnpm install
+      - name: Build
+        run: pnpm build
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --project bancor-v2 --only hosting:bancor-landing
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
