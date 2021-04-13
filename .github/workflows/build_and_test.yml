@@ -15,6 +15,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: |
-          pnpm install
+          npm install
       - name: Build
-        run: pnpm build
+        run: npm build

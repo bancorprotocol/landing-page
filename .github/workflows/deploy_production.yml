@@ -15,9 +15,9 @@ jobs:
           ref: master
       - name: Install Dependencies
         run: |
-          pnpm install
+          npm install
       - name: Build
-        run: pnpm build
+        run: npm build
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
