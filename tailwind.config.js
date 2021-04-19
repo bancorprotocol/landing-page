@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 const buttons = require('./tw_plugins/buttons')
 
 module.exports = {
+  mode: 'jit',
   purge: ['./index.html', './public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   darkMode: 'class',
   theme: {

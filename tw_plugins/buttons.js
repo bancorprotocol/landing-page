@@ -5,7 +5,8 @@ const defaultOptions = (theme) => {
   return {
     btnStyle: {
       fontWeight: theme('fontWeight.600'),
-      '@apply flex items-center font-poppins px-10 text-[16px] h-[40px] rounded-full border-2 transition-all duration-300 focus:outline-none outline-none focus:ring-4':
+      height: '40px',
+      '@apply flex items-center font-poppins px-10 text-base rounded-full border-2 transition-all duration-300 focus:outline-none outline-none focus:ring-4':
         '',
     },
     sizes: {

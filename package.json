@@ -18,7 +18,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.2",
     "@intlify/vite-plugin-vue-i18n": "^2.0.3",
-    "@tailwindcss/jit": "^0.1.18",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.7",
@@ -32,7 +31,7 @@
     "postcss": "^8.2.9",
     "postcss-import": "^14.0.0",
     "prettier": "^2.2.1",
-    "tailwindcss": "^2.0.4",
+    "tailwindcss": "^2.1.1",
     "typescript": "^4.2.3",
     "vite": "^2.1.0",
     "vite-plugin-components": "^0.8.3",
