@@ -3,6 +3,7 @@ dependencies:
   '@vueuse/head': 0.5.1_vue@3.0.7
   numbro: 2.3.2
   vue: 3.0.7
+  vue-gtag-next: 1.14.0_vue@3.0.7
   vue-i18n: 9.0.0_vue@3.0.7
   vue-router: 4.0.5_vue@3.0.7
 devDependencies:
@@ -4927,6 +4928,14 @@ packages:
       eslint: '>=5.0.0'
     resolution:
       integrity: sha512-QXxqH8ZevBrtiZMZK0LpwaMfevQi9UL7lY6Kcp+ogWHC88AuwUPwwCIzkOUc1LR4XsYAt/F9yHXAB/QoD17QXA==
+  /vue-gtag-next/1.14.0_vue@3.0.7:
+    dependencies:
+      vue: 3.0.7
+    dev: false
+    peerDependencies:
+      vue: ^3.0.0-rc.11
+    resolution:
+      integrity: sha512-iJl+cOG2GU5NuxqzSSIpt03WVOvZqyKB9TOy7d55KiuvRklcnb2nlqxW5B/a3/sbIt7fla+XEkRyMCcoz0zAHw==
   /vue-i18n/9.0.0_vue@3.0.7:
     dependencies:
       '@intlify/core-base': 9.0.0
@@ -5281,6 +5290,7 @@ specifiers:
   vite-plugin-pwa: ^0.5.6
   vite-plugin-vue-layouts: ^0.2.2
   vue: ^3.0.7
+  vue-gtag-next: ^1.14.0
   vue-i18n: ^9.0.0
   vue-router: ^4.0.5
   vue-tsc: ^0.0.24
