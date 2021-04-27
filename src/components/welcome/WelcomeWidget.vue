@@ -1,7 +1,6 @@
 <template>
   <a
     :href="props.buttonHref"
-    target="_blank"
     class="group w-[327px] py-8 px-5 bg-white rounded-[40px] shadow-custom hover:shadow-custom4 transition-shadow duration-500 border border-gray flex flex-col items-center"
     @click="onCtaClick"
   >
@@ -32,8 +31,8 @@ const props = defineProps<{
 const dataLayer = window.dataLayer as {}[]
 
 const onCtaClick = () => {
-  dataLayer.push({
-    [`${props.title}`]: `Homepage ${props.title} Click`,
-  })
+  // dataLayer.push({
+  //   [`${props.title}`]: `Homepage ${props.title} Click`,
+  // })
 }
 </script>
