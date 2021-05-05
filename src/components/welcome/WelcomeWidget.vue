@@ -2,7 +2,6 @@
   <a
     :href="props.buttonHref"
     class="group w-[327px] py-8 px-5 bg-white rounded-[40px] shadow-custom hover:shadow-custom4 transition-shadow duration-500 border border-gray flex flex-col items-center"
-    @click="onCtaClick"
   >
     <div class="w-[60px] h-[50px] flex justify-center items-center">
       <img :src="`/images/icons/${props.icon}.svg`" />
@@ -30,9 +29,4 @@ const props = defineProps<{
 // @ts-ignore
 const dataLayer = window.dataLayer as {}[]
 
-const onCtaClick = () => {
-  // dataLayer.push({
-  //   [`${props.title}`]: `Homepage ${props.title} Click`,
-  // })
-}
 </script>
