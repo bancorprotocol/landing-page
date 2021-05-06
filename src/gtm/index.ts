@@ -1,4 +1,5 @@
 export const googleTagManager = () => {
+    // @ts-ignore
     if (window.dataLayer) return;
     init(window, document, "script", "dataLayer", "GTM-TCBKR7W");
     sendGTMPath(undefined, window.location.pathname);
@@ -16,6 +17,7 @@ export const googleTagManager = () => {
   };
   
   const sendGTM = (data: {}) => {
+    // @ts-ignore
     const dataLayer = window.dataLayer as {}[];
     if (dataLayer) dataLayer.push(data);
   };
