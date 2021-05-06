@@ -18,10 +18,6 @@
         "source": "**/*",
         "headers": [
           {
-            "key": "Content-Security-Policy",
-            "value": "frame-ancestors 'self' https://bancor.network https://*.bancor.network; default-src 'self'; connect-src  https://bancor.network https://*.bancor.network; font-src https://fonts.gstatic.com; style-src-elem 'self' https://fonts.googleapis.com; script-src 'self' 'sha256-rvhZGLaJwxrfF3Z+Qn5DuTrylOtLYweX/itW7XlOsFc='; script-src-elem 'self' https://www.googletagmanager.com blob: 'sha256-rvhZGLaJwxrfF3Z+Qn5DuTrylOtLYweX/itW7XlOsFc=';"
-          },
-          {
             "key": "X-Content-Type-Options",
             "value": "nosniff"
           },
