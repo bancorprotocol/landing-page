@@ -2,7 +2,6 @@
   <a
     :href="props.buttonHref"
     class="group w-[327px] py-8 px-5 bg-white rounded-[40px] shadow-custom hover:shadow-custom4 transition-shadow duration-500 border border-gray flex flex-col items-center"
-    @click="onCtaClick"
   >
     <div class="w-[60px] h-[50px] flex justify-center items-center">
       <img :src="`/images/icons/${props.icon}.svg`" />
@@ -18,7 +17,6 @@
 </template>
 <script setup lang="ts">
 import { defineProps } from 'vue'
-import { sendGTMEvent } from '~/gtm'
 
 const props = defineProps<{
   title: string
@@ -27,10 +25,6 @@ const props = defineProps<{
   buttonHref: string
   icon: string
 }>()
-
-const onCtaClick = () => {
-  sendGTMEvent(`Homepage ${props.title} Click`,'Homepage')
-}
 
 
 </script>
