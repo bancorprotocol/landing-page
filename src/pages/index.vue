@@ -75,13 +75,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from '@vue/runtime-core'
-import { useGtag } from 'vue-gtag-next'
-
-onMounted(() => {
-  const { pageview } = useGtag()
-  pageview({ page_path: '/landing-page' })
-})
 const widgetData = [
   {
     id: 1,
