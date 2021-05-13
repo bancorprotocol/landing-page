@@ -1284,7 +1284,7 @@
     "@vue/compiler-core" "3.0.11"
     "@vue/shared" "3.0.11"
 
-"@vue/compiler-sfc@^3.0.5", "@vue/compiler-sfc@^3.0.7":
+"@vue/compiler-sfc@^3.0.11", "@vue/compiler-sfc@^3.0.7":
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.0.11.tgz#cd8ca2154b88967b521f5ad3b10f5f8b6b665679"
   integrity sha512-7fNiZuCecRleiyVGUWNa6pn8fB2fnuJU+3AGjbjl7r1P5wBivfl02H4pG+2aJP5gh2u+0wXov1W38tfWOphsXw==
@@ -1875,14 +1875,7 @@ debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
-
-debug@^4.3.2:
+debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -4461,16 +4454,16 @@ vite-plugin-pwa@^0.5.6:
     pretty-bytes "^5.6.0"
     workbox-build "^6.1.1"
 
-vite-plugin-vue-layouts@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-vue-layouts/-/vite-plugin-vue-layouts-0.2.2.tgz#b630ff2a557c5995a5a86507f5dc304a99c6b1a8"
-  integrity sha512-I5BfkCHwHV1WlbJE1ps2r6vwTo3N5QpLks3UpGa8XHcmHW03lavvJkdfjBpagI1bUQGEwWjLowFisG0Q/NJq3A==
+vite-plugin-vue-layouts@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-layouts/-/vite-plugin-vue-layouts-0.3.1.tgz#0782390995f8d3ed1c7a1b02e3a35522a676f7b5"
+  integrity sha512-Chw+gEJX51+vwikWIp2R3GbBIkSQFi0CdOBKTqAktn+thVWn4mleE2pbdr2jM2Ylc0lL2bm/NpOHE0Pe6YUGqg==
   dependencies:
-    "@vue/compiler-sfc" "^3.0.5"
+    "@vue/compiler-sfc" "^3.0.11"
     debug "^4.3.2"
     fast-glob "^3.2.5"
-    vue "^3.0.5"
-    vue-router "^4.0.3"
+    vue "^3.0.11"
+    vue-router "^4.0.6"
 
 vite@^2.1.0:
   version "2.3.2"
@@ -4511,7 +4504,7 @@ vue-i18n@^9.0.0:
     "@intlify/vue-devtools" "9.1.6"
     "@vue/devtools-api" "^6.0.0-beta.7"
 
-vue-router@^4.0.3, vue-router@^4.0.5:
+vue-router@^4.0.5, vue-router@^4.0.6:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.7.tgz#46f17ac7f3233c41f0267d55b2baf2dd6ccc8553"
   integrity sha512-3pVrWYM0w51EL2lO07VRZTC5S8jljZd9Ly75ZFK14tnQxoOzKLX6/TomcwRNB+pyqNq5fJnhxfP5g6KEqBULRg==
@@ -4525,7 +4518,7 @@ vue-tsc@^0.0.25:
   dependencies:
     unzipper "0.10.11"
 
-vue@^3.0.5, vue@^3.0.7:
+vue@^3.0.11, vue@^3.0.7:
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.0.11.tgz#c82f9594cbf4dcc869241d4c8dd3e08d9a8f4b5f"
   integrity sha512-3/eUi4InQz8MPzruHYSTQPxtM3LdZ1/S/BvaU021zBnZi0laRUyH6pfuE4wtUeLvI8wmUNwj5wrZFvbHUXL9dw==
