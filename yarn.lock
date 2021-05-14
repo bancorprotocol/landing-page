@@ -4511,10 +4511,10 @@ vue-i18n@^9.0.0:
     "@intlify/vue-devtools" "9.1.6"
     "@vue/devtools-api" "^6.0.0-beta.7"
 
-vue-router@^4.0.3, vue-router@^4.0.5:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.7.tgz#46f17ac7f3233c41f0267d55b2baf2dd6ccc8553"
-  integrity sha512-3pVrWYM0w51EL2lO07VRZTC5S8jljZd9Ly75ZFK14tnQxoOzKLX6/TomcwRNB+pyqNq5fJnhxfP5g6KEqBULRg==
+vue-router@^4.0.3, vue-router@^4.0.5, vue-router@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.8.tgz#55d4290a3122444edbc91a3cd2492bb1d0cef494"
+  integrity sha512-42mWSQaH7CCBQDspQTHv63f34VEnZC20g9QNK4WJ/zW8SdIUeT6TQ2i/78fjF/pVBUPLBWrGhvB7uDnaz7O/pA==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.10"
 
