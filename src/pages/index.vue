@@ -82,14 +82,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-
-const innerHeight = ref(window.innerHeight)
-
-onMounted(() => window.addEventListener('resize', onResize))
-
-const onResize = () => (innerHeight.value = window.innerHeight)
-
 const widgetData = [
   {
     id: 1,
