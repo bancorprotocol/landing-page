@@ -1,6 +1,6 @@
 @layer utilities {
   .main-content {
-    @apply 2xl:container 2xl:mx-auto px-6 md:px-10;
+    @apply 2xl:container 2xl:mx-auto px-6 lg:px-10;
   }
 
   .bg-cubes {

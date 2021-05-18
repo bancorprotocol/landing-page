@@ -1,80 +1,95 @@
 <template>
-  <div class="main-content">
-    <div class="flex flex-col md:items-center">
-      <h1 class="mb-8 text-[60px] md:text-[70px]">Trade & Earn</h1>
+  <main class="h-full bg-mobile-cubes md:bg-cubes">
+    <div class="main-content flex flex-col items-center justify-around h-screen min-h-[550px] max-h-[750px]">
+      <div class="flex justify-between w-full main-content">
+        <img src="/images/logos/bancor.svg" />
+        <a href="https://app.bancor.network/eth/data" class="hidden btn-outline-primary md:flex">Enter App</a>
+      </div>
+
+      <h1 class="text-[60px] md:text-[70px]">Trade & Earn</h1>
       <p class="max-w-3xl text-[24px] md:text-center">
         Trade tokens and earn interest on your favorite tokens by staking them in Bancor’s decentralized exchange
       </p>
 
-      <div class="flex justify-center mt-8 space-x-3 md:hidden">
-        <a v-for="item in widgetData" :key="item.id" class="flex btn-primary" :href="item.buttonHref">
-          {{ item.title }}
-          <img :src="`/images/icons/${item.icon}-white.svg`" alt="Swap and Earn CTA Icon" class="ml-3" />
-        </a>
-      </div>
-    </div>
-
-    <div
-      class="flex-col items-center justify-center hidden mt-20 space-y-8 md:flex md:space-y-0 md:space-x-8 md:flex-row"
-    >
-      <WelcomeWidget
-        v-for="item in widgetData"
-        :key="item.id"
-        :title="item.title"
-        :description="item.description"
-        :icon="item.icon"
-        :button-label="item.buttonLabel"
-        :button-href="item.buttonHref"
-      ></WelcomeWidget>
-    </div>
-  </div>
-
-  <WelcomeStatistics></WelcomeStatistics>
-
-  <div class="mb-32 md:hidden main-content">
-    <div v-for="(item, index) in widgetData" :key="item.id">
-      <div class="flex flex-row">
-        <div class="w-[80px] flex-none flex items-center justify-center mr-5">
-          <img :src="`/images/icons/${item.icon}.svg`" alt="Swap and Earn CTA Icon" />
-        </div>
-        <div class="flex-grow">
-          <h2 class="mb-2">{{ item.title }}</h2>
-          <p class="text-lg">{{ item.description }}</p>
-          <a :href="item.buttonHref" class="flex mt-5 text-lg font-bold text-primary-500">
-            {{ item.buttonLabel }}
-            <img :src="`/images/icons/arrow-right.svg`" class="ml-3" />
+      <div class="flex flex-col md:items-center">
+        <div class="flex justify-center mt-8 space-x-3 md:hidden">
+          <a v-for="item in widgetData" :key="item.id" class="flex btn-primary" :href="item.buttonHref">
+            {{ item.title }}
+            <img :src="`/images/icons/${item.icon}-white.svg`" alt="Swap and Earn CTA Icon" class="ml-3" />
           </a>
         </div>
       </div>
 
-      <hr v-if="index + 1 < widgetData.length" class="my-16 border-gray4" />
-    </div>
-  </div>
-
-  <div class="grid grid-flow-col grid-cols-1 grid-rows-2 gap-20 md:grid-cols-2 main-content">
-    <div v-for="item in aboutData" :key="item.id" class="flex flex-col justify-center">
-      <h2 class="mb-3">{{ item.title }}</h2>
-      <p class="text-lg">
-        {{ item.description }}
-      </p>
-      <div class="flex mt-8 space-x-5">
-        <a
-          v-for="link in item.links"
-          :key="link.id"
-          :href="link.href"
-          class="w-[50px] h-[50px] bg-gray5 rounded-[14px] shadow-custom2 flex justify-center items-center hover:shadow-custom3 transition-shadow duration-500"
-        >
-          <img :src="`/images/icons/${link.icon}.svg`" alt="Link to Social Media" />
-        </a>
+      <div class="flex-col items-center justify-center hidden pb-5 md:flex md:space-x-8 md:flex-row">
+        <WelcomeWidget
+          v-for="item in widgetData"
+          :key="item.id"
+          :title="item.title"
+          :description="item.description"
+          :icon="item.icon"
+          :button-label="item.buttonLabel"
+          :button-href="item.buttonHref"
+        ></WelcomeWidget>
       </div>
     </div>
-    <div class="row-span-2 h-[745px] hidden md:flex items-center">
-      <img src="/images/common/cubes.svg" alt="Cubes Image" />
+
+    <WelcomeStatistics></WelcomeStatistics>
+
+    <div class="mb-32 md:hidden main-content">
+      <div v-for="(item, index) in widgetData" :key="item.id">
+        <div class="flex flex-row">
+          <div class="w-[80px] flex-none flex items-center justify-center mr-5">
+            <img :src="`/images/icons/${item.icon}.svg`" alt="Swap and Earn CTA Icon" />
+          </div>
+          <div class="flex-grow">
+            <h2 class="mb-2">{{ item.title }}</h2>
+            <p class="text-lg">{{ item.description }}</p>
+            <a :href="item.buttonHref" class="flex mt-5 text-lg font-bold text-primary-500">
+              {{ item.buttonLabel }}
+              <img :src="`/images/icons/arrow-right.svg`" class="ml-3" />
+            </a>
+          </div>
+        </div>
+
+        <hr v-if="index + 1 < widgetData.length" class="my-16 border-gray4" />
+      </div>
     </div>
-  </div>
+
+    <div class="grid grid-flow-col grid-cols-1 grid-rows-2 gap-20 md:grid-cols-2 main-content">
+      <div v-for="item in aboutData" :key="item.id" class="flex flex-col justify-center">
+        <h2 class="mb-3">{{ item.title }}</h2>
+        <p class="text-lg">
+          {{ item.description }}
+        </p>
+        <div class="flex mt-8 space-x-5">
+          <a
+            v-for="link in item.links"
+            :key="link.id"
+            :href="link.href"
+            class="w-[50px] h-[50px] bg-gray5 rounded-[14px] shadow-custom2 flex justify-center items-center hover:shadow-custom3 transition-shadow duration-500"
+          >
+            <img :src="`/images/icons/${link.icon}.svg`" alt="Link to Social Media" />
+          </a>
+        </div>
+      </div>
+      <div class="row-span-2 h-[745px] hidden md:flex items-center">
+        <img src="/images/common/cubes.svg" alt="Cubes Image" />
+      </div>
+    </div>
+
+    <WelcomeFooter></WelcomeFooter>
+  </main>
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue'
+
+const innerHeight = ref(window.innerHeight)
+
+onMounted(() => window.addEventListener('resize', onResize))
+
+const onResize = () => (innerHeight.value = window.innerHeight)
+
 const widgetData = [
   {
     id: 1,
