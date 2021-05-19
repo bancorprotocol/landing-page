@@ -9,7 +9,7 @@
         >
           <span class="xl:mr-2">{{ item.label }}</span>
           <span class="text-lg font-light md:text-3xl">
-            {{ item.prepend }}<span class="font-bold uppercase">{{ item.value }}</span
+            {{ item.prepend }}<span class="font-bold uppercase" style="white-space: nowrap">{{ item.value }}</span
             >{{ item.append }}
           </span>
         </div>
