@@ -3507,10 +3507,10 @@ pluralize@^8.0.0:
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
   integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
 
-pnpm@^5.18.7:
-  version "5.18.9"
-  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-5.18.9.tgz#d5216cc174953144075a0b6d18757e484fd9371a"
-  integrity sha512-TYIkMI/ydQkorwVe5CGTZQj0Bn1Cd7aEMYLV91AIAwqiwt7ItrHkBnwmORS49r6vpNtjYE+4M6/6O2w1tcnbaA==
+pnpm@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-6.4.0.tgz#6e7c92c20905bc37b164471ffd357a72bab9506b"
+  integrity sha512-ws4OArFXDfjOrj6gk4Ded+CkbW6pRKkscnOEONetX2MV+m5fwxTIAVw2Fic4CNTKZbN4D182oPQyoMd5uGzrjw==
 
 postcss-functions@^3:
   version "3.0.0"
