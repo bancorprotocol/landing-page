@@ -97,6 +97,11 @@ const footerData = [
         label: 'Reddit',
         href: 'https://www.reddit.com/r/Bancor/',
       },
+      {
+        id: 5,
+        label: 'Discord',
+        href: 'https://discord.gg/CAm3Ncyrxk',
+      },
     ],
   },
 ]
