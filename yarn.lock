@@ -1875,14 +1875,7 @@ debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
-
-debug@^4.3.2:
+debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -4425,14 +4418,15 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vite-plugin-components@^0.8.3:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/vite-plugin-components/-/vite-plugin-components-0.8.4.tgz#158a4d69c8106c36944a2e284df3ad0169ae1017"
-  integrity sha512-h6/FNBKBXc4TIcHxnFYxa4+aBGDZusqp/6Ra3LBvwolwFuX6k8qPsBbXkBP0I+UwOkyHw9iU2xJ4rdYBGyN+0Q==
+vite-plugin-components@^0.11.2:
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-components/-/vite-plugin-components-0.11.2.tgz#83cd0ebf3388329464ccaf6e259a416492a728a3"
+  integrity sha512-FfW88iOmOHx1GlGJ2KT3r51Oyu7pntgkMxv7X7WxwPS69lOCWzmDO0n2+TWiWYPDpboDLJsPKBDeSBN1BhTtXQ==
   dependencies:
     chokidar "^3.5.1"
     debug "^4.3.2"
     fast-glob "^3.2.5"
+    magic-string "^0.25.7"
     minimatch "^3.0.4"
 
 vite-plugin-pages@^0.7.1:
