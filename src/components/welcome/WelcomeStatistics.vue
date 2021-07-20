@@ -39,6 +39,7 @@ const statistics = computed(() => {
     mantissa: 3,
     optionalMantissa: true,
     spaceSeparated: true,
+    lowPrecision: false,
   }
 
   const bntSupply: string = welcomeData.value.bnt_supply
