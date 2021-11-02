@@ -116,7 +116,7 @@ const aboutData = [
       {
         id: 2,
         icon: 'discord',
-        href: 'https://discord.gg/EHK8wHbgau',
+        href: 'https://discord.gg/CAm3Ncyrxk',
       },
       {
         id: 3,
