@@ -1,5 +1,17 @@
 <template>
   <main class="h-full bg-mobile-cubes md:bg-cubes">
+    <div class="relative bg-black h-[80px] flex md:justify-center items-center">
+      <img class="absolute right-0" src="/images/logos/gfx.svg" width="392px" />
+      <div class="flex flex-col md:flex-row md:justify-center items-start md:items-center">
+        <img src="/images/logos/slogan-mobile.svg" class="ml-[24px] mb-2 md:hidden" />
+        <div class="flex">
+          <img src="/images/logos/bancorv3.svg" class="ml-[24px] md:ml-0" />
+          <img src="/images/logos/arrowLeft.svg" class="ml-3 md:hidden" />
+        </div>
+        <img src="/images/logos/slogan.svg" class="ml-[24px] hidden md:block" />
+      </div>
+
+    </div>
     <div class="main-content flex flex-col items-center justify-around h-screen min-h-[550px] max-h-[750px]">
       <div class="flex justify-between w-full main-content">
         <img src="/images/logos/bancor.svg" />
