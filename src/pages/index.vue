@@ -1,7 +1,13 @@
 <template>
   <main class="h-full bg-mobile-cubes md:bg-cubes">
-    <a href="https://try.bancor.network" target="_blank" class="z-50 relative fixed w-full bg-black h-[80px] flex md:justify-center items-center">
-      <img class="absolute right-0" src="/images/logos/gfx.png" width="392px" height="80px" />
+    <a
+      href="https://try.bancor.network"
+      target="_blank"
+      class="z-50 relative fixed w-full bg-black h-[80px] flex md:justify-center items-center"
+    >
+      <div class="absolute right-0">
+        <img src="/images/logos/gfx.png" width="392px" height="80px" />
+      </div>
       <div class="flex flex-col md:flex-row md:justify-center items-start md:items-center">
         <img src="/images/logos/slogan-mobile.svg" class="ml-[24px] mb-2 md:hidden" />
         <div class="flex">
