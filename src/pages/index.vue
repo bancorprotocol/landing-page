@@ -5,8 +5,8 @@
       target="_blank"
       class="z-50 relative fixed w-full bg-black h-[80px] flex md:justify-center items-center"
     >
-      <div class="absolute right-0">
-        <img src="/images/logos/gfx.png" width="392px" height="80px" />
+      <div class="absolute right-0 w-[392px] h-[80px]">
+        <img src="/images/logos/gfx.png" class="w-[392px] h-[80px]" />
       </div>
       <div class="flex flex-col md:flex-row md:justify-center items-start md:items-center">
         <img src="/images/logos/slogan-mobile.svg" class="ml-[24px] mb-2 md:hidden" />
