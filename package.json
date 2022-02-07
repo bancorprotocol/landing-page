@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build",
-    "deploy": "pnpm i && pnpm build && firebase deploy --only hosting:bancor-landing"
+    "build": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build"
   },
   "dependencies": {
     "@vueuse/core": "^4.4.1",
