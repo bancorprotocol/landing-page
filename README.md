@@ -34,13 +34,7 @@ And you will see the generated file in `dist` that ready to be served.
 
 ### Deploy
 
-To deploy the App to Firebase, run
-
-```bash
-pnpm deploy
-```
-
-This will also execute the `install` and `build` scripts before deploying.
+PRs are deployed to cloudflare
 
 
 ## Features
