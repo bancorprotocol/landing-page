@@ -25,7 +25,7 @@
 
       <h1 class="text-[60px] md:text-[70px]">Trade & Earn</h1>
       <p class="max-w-3xl text-[24px] md:text-center">
-        Trade tokens and earn interest on your favorite tokens by staking them in Bancor’s decentralized exchange
+        Trade tokens and earn passive income on your favorite tokens by staking them in Bancor’s decentralized exchange
       </p>
 
       <div class="flex flex-col md:items-center">
