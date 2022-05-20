@@ -1,0 +1,4 @@
+*
+  cache-control: max-age=0
+  cache-control: no-cache
+  cache-control: no-store

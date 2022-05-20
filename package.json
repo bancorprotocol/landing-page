@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build"
+    "build": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build; cp ./_headers dist; cp ./_redirects dist"
   },
   "dependencies": {
     "@vueuse/core": "^4.4.1",
