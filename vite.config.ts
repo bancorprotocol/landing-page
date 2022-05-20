@@ -4,7 +4,7 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import ViteComponents from 'vite-plugin-components'
-import { VitePWA } from 'vite-plugin-pwa'
+// import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 
 export default defineConfig({
@@ -27,31 +27,31 @@ export default defineConfig({
     ViteComponents(),
 
     // https://github.com/antfu/vite-plugin-pwa
-    VitePWA({
-      manifest: {
-        name: 'Bancor Network',
-        short_name: 'Bancor',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: '/pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
-      },
-    }),
+    // VitePWA({
+    //   manifest: {
+    //     name: 'Bancor Network',
+    //     short_name: 'Bancor',
+    //     theme_color: '#ffffff',
+    //     icons: [
+    //       {
+    //         src: '/pwa-192x192.png',
+    //         sizes: '192x192',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: '/pwa-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: '/pwa-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png',
+    //         purpose: 'any maskable',
+    //       },
+    //     ],
+    //   },
+    // }),
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
