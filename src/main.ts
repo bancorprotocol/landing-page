@@ -1,13 +1,22 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import { googleTagManager } from './gtm'
-import './styles/main.css'
+// import { createApp } from 'vue'
+// import App from './App.vue'
+// import { googleTagManager } from './gtm'
+// import './styles/main.css'
 
-const app = createApp(App)
+caches
+  .keys()
+  .then(function (names) {
+    for (const name of names) caches.delete(name)
+  })
+  .then(() => {
+    window.location.replace('https://home.bancor.network')
+  })
 
-googleTagManager()
+// const app = createApp(App)
 
-// Install modules from `./modules` folder
-Object.values(import.meta.globEager('./modules/*.ts')).map((module) => module.install?.(app))
+// googleTagManager()
 
-app.mount('#app')
+// // Install modules from `./modules` folder
+// Object.values(import.meta.globEager('./modules/*.ts')).map((module) => module.install?.(app))
+
+// app.mount('#app')
